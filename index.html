@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарное Приложение</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+  <header>
+    <h1>SliceCalendar</h1>
+  </header>
+
+  <button id="toggle-history">&#9776;</button> 
+
+
+  <div id="history-panel">
+      <ul id="history-list">
+      </ul>
+      <button id="clear-history">&#128465;</button> 
+  </div>
+
+  <div class="input-group">
+    <h2>Введите начальную дату:</h2>
+    <div id="date-input">
+      <input type="date" id="start-date">
+      <button id="confirm-button">Подтвердить</button>
+  </div>
+</div>
+
+
+    <div id="month-choice">
+        <button class="month-btn" data-months="3">3 Месяца</button>
+        <button class="month-btn" data-months="6">6 Месяцев</button>
+        <button class="month-btn" data-months="12">12 Месяцев</button>
+    </div>
+    <div id="calendar">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
